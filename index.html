@@ -1,7 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
+<meta name="description" content="Samir Gwalia is a life long learner,visit to read is writings. Contact for collaborations.">
+<meta name="keywords" content="[samir gwalia, samir, gwalia, kyun, kyun manjul khattar, manjul khattar, shahid mallya, kyun song, github]">
 <title>Samir Gwalia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,7 +16,8 @@
         height: auto;
     }
 </style>
-<script src="https://www.w3schools.com/lib/w3.js">
+<script 
+        src="https://www.w3schools.com/lib/w3.js">
 
 </script>
 <body>
@@ -22,11 +28,10 @@
         <a href="#" class="w3-bar-item w3-button">Home</a>
         <a href="#about" class="w3-bar-item w3-button w3-hover-green">About me</a>
         <a href="#song" class="w3-bar-item w3-button w3-hover-blue">My Songs</a>
-        <a href="#blog" class="w3-bar-item w3-button w3-hover-teal">Blog</a>
+        <a href="blogs.html" class="w3-bar-item w3-button w3-hover-teal">My writings</a>
     </div>
 
-    <img src="images/samir.png" alt="samir" style="width:100%">
-
+    p.none {border-style: none;}
     <style>
         .fa {
             padding: 20px;
@@ -45,7 +50,7 @@
         .fa-facebook {
             background: #3B5998;
             color: white;
-            shape-image-threshold:r
+            shape-image-threshold: r
         }
 
         .fa-twitter {
@@ -79,19 +84,21 @@
         }
 
         body {
-            background-image: url("images/back7.jpg");
+            background-color: dodgerblue;
+            ;
         }
     </style>
     <!-- ************** Container of about and slideshow****************-->
+    <img src="images/samir.png" alt="samir" style="width:100%">
     <div class="w3-row-padding w3-normal" style="margin:0% 25% 0% 25% " id="about">
 
         <div class="w3-half w3-content w3-section" style="max-width:100%">
             <div class="w3-padding-64 w3-greyscale">
-                <img class="mySlides w3-animate-left" src="images/sam1.jpg" style="width:100%">
-                <img class="mySlides w3-animate-left" src="images/sam2.jpg" style="width:100%">
-                <img class="mySlides w3-animate-left" src="images/sam3.jpg" style="width:100%">
-                <img class="mySlides w3-animate-left" src="images/sam4.jpg" style="width:100%">
-                <img class="mySlides w3-animate-left" src="images/sam5.jpg" style="width:100%">
+                <img class="slides w3-animate-left" src="images/sam1.jpg" style="width:100%">
+                <img class="slides w3-animate-left" src="images/sam2.jpg" style="width:100%">
+                <img class="slides w3-animate-left" src="images/sam3.jpg" style="width:100%">
+                <img class="slides w3-animate-left" src="images/sam4.jpg" style="width:100%">
+                <img class="slides w3-animate-left" src="images/sam5.jpg" style="width:100%">
 
             </div>
             <script>
@@ -100,7 +107,7 @@
 
                 function carousel() {
                     var i;
-                    var x = document.getElementsByClassName("mySlides");
+                    var x = document.getElementsByClassName("slides")
                     for (i = 0; i < x.length; i++) {
                         x[i].style.display = "none";
                     }
@@ -108,6 +115,7 @@
                     if (myIndex > x.length) { myIndex = 1 }
                     x[myIndex - 1].style.display = "block";
                     setTimeout(carousel, 2500);
+
                 }
             </script>
         </div><br />
@@ -115,15 +123,15 @@
         <div class="w3-half w3-content w3-section" style="max-width:700px">
             <style>
                 body {
-                    color: lawngreen;
+                    color: black;
                 }
 
                 h1 {
-                    color: greenyellow;
+                    color: white;
                 }
             </style>
             <div class="w3-padding-64">
-                <h1 class="w3-center w3-georgia ">About me</h1><br>
+                <h1 class="w3-center ">About me</h1><br>
                 <p class="w3-center w3-large w3-cursive">
                     To be honest I am also searching for its answer.
                     I always wonder here and there to find it, God knows when I will find it.
@@ -155,8 +163,8 @@
 
         <div class="w3-row w3-container">
             <div class="w3-half w3-display-container w3-hover-opacity" style="width:50%">
-                <img src="images/kyun1.jpg" alt="Kyun" style="width:100%"><br />
-                
+                <img class="mySlides w3-animate-left" src="images/kyun1.jpg" style="width:100%">
+
                 <div class="w3-display-middle w3-display-hover w3-xlarge">
                     <a href="https://www.youtube.com/watch?v=DX4KU-_TgUM" class="fa fa-youtube"></a>
                     <a href="https://open.spotify.com/album/1tOqNkNikAONFRpvrR08SB?highlight=spotify:track:6JPF5mSPDGnN5NyOMY21AJ" class="fa fa-spotify"></a>
@@ -176,13 +184,17 @@
                     </p>
                     <style>
                         body {
-                            color: lawngreen;
+                            color: white;
                         }
                     </style>
 
-                    
-                    <p class="w3-xlarge w3-serif"><i>"ye humara milna, ittefaq nhi hai <br />
-                        marzi ahi khuda ki, mazak nhi hai"</i></p>
+
+                    <p class="w3-xlarge w3-serif">
+                        <i>
+                            "ye humara milna, ittefaq nhi hai <br />
+                            marzi ahi khuda ki, mazak nhi hai"
+                        </i>
+                    </p>
 
                 </div>
             </div>
